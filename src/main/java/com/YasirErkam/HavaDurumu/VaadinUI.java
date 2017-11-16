@@ -4,7 +4,6 @@ package com.YasirErkam.HavaDurumu;
 import com.vaadin.server.FileResource;
 import com.vaadin.server.VaadinService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.StringUtils;
 
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
@@ -43,8 +42,8 @@ public class VaadinUI extends UI {
         designHD.locImg.setSource(resourceButton);
 
         HavaDurumuVerileri hdV = new HavaDurumuVerileri();
-        hdV.ListeyiDoldur();
-        designHD.simdikiSicaklik.setValue(hdV.sSicaklik+"°");
+        hdV.HavaDurumuAl();
+        designHD.simdikiSicaklik.setValue(hdV.sSicaklikAnlik +"°");
         designHD.buttonKonum.setCaption(hdV.sSehirAdi);
 
     }
