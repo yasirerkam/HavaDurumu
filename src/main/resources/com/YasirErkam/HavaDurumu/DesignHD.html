@@ -24,10 +24,16 @@
          <vaadin-absolute-layout>
           <vaadin-panel style-name="borderless" width="110px" height="145px" :top="23px" :left="763px">
            <vaadin-vertical-split-panel responsive locked split-position="70%">
-            <vaadin-button icon="fonticon://Vaadin-Icons/e726" style-name="icon-only" responsive size-full plain-text _id="konumButton"></vaadin-button>
-            <vaadin-label style-name="align-center borderless colored huge" width-full plain-text>
+            <vaadin-grid-layout responsive size-full>
+             <row expand="1">
+              <column expand="1">
+               <vaadin-image height-full _id="locImg" :middle :center></vaadin-image>
+              </column>
+             </row>
+            </vaadin-grid-layout>
+            <vaadin-button style-name="borderless borderless-colored friendly" size-full plain-text _id="buttonKonum">
               Konum 
-            </vaadin-label>
+            </vaadin-button>
            </vaadin-vertical-split-panel>
           </vaadin-panel>
           <vaadin-label style-name="bold align-center h2" responsive plain-text _id="ismim" :top="0px" :right="461px" :bottom="378px" :left="51px">

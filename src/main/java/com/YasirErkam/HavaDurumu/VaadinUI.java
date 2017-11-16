@@ -38,7 +38,7 @@ public class VaadinUI extends UI {
         designHD.cloud.setSource(resourceCloud);
 
         FileResource resourceButton = new FileResource(new File(basepath + "/WEB-INF/images/location.png"));
-        designHD.konumButton.setIcon(resourceButton);
+        designHD.locImg.setSource(resourceButton);
     }
 
 
