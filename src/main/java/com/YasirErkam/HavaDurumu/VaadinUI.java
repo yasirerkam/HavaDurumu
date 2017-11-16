@@ -19,6 +19,8 @@ public class VaadinUI extends UI {
     public VaadinUI() {
     }
 
+    public DesignHD designHD;
+
     @Override
     protected void init(VaadinRequest request) {
 
@@ -39,6 +41,12 @@ public class VaadinUI extends UI {
 
         FileResource resourceButton = new FileResource(new File(basepath + "/WEB-INF/images/location.png"));
         designHD.locImg.setSource(resourceButton);
+
+        HavaDurumuVerileri hdV = new HavaDurumuVerileri();
+        hdV.ListeyiDoldur();
+        designHD.simdikiSicaklik.setValue(hdV.sSicaklik+"°");
+        designHD.buttonKonum.setCaption(hdV.sSehirAdi);
+
     }
 
 

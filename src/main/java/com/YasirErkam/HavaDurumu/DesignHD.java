@@ -26,6 +26,7 @@ public class DesignHD extends AbsoluteLayout {
     protected Image locImg;
     protected Button buttonKonum;
     protected Label ismim;
+    protected Label simdikiSicaklik;
     protected Image cloud;
 
     public DesignHD() {
