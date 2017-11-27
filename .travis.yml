@@ -6,7 +6,7 @@ jdk: oraclejdk8
 
 
 install: true
-script: ./mvnw clean install
+script: ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 
 
