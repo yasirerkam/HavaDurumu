@@ -1,3 +1,4 @@
+before_install:
 git update-index --chmod=+x mvnw
 
 language: java
