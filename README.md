@@ -1,5 +1,6 @@
 # HavaDurumu
 Weather Web Application
+
 [![Coverage Status](https://coveralls.io/repos/github/yasirerkam/HavaDurumu/badge.svg?branch=master)](https://coveralls.io/github/yasirerkam/HavaDurumu?branch=master)
 [![Build Status](https://travis-ci.org/yasirerkam/HavaDurumu.svg?branch=master)](https://travis-ci.org/yasirerkam/HavaDurumu)
 
