@@ -13,6 +13,10 @@ install:
 
 script:
 - ./mvnw test -B
+"mvn cobertura:cobertura"
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
 
 cache:
   directories:
