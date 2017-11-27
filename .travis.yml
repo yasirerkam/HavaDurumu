@@ -1,4 +1,5 @@
+git update-index --chmod=+x mvnw
+
 language: java
 
 jdk: oraclejdk8
-git update-index --chmod=+x mvnw
