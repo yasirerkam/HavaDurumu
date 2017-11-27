@@ -1,8 +1,20 @@
 language: java
+
+
 jdk:
 - oraclejdk8
 # git strips the wrapper jar file so we have to force its download during the build
+
+
 install:
 - mvn -N io.takari:maven:wrapper
 - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-- bash <(curl -s https://codecov.io/bash)
+
+
+script:
+- ./mvnw test -B
+
+cache:
+  directories:
+  - $HOME/.m2
+
