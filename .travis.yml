@@ -11,10 +11,11 @@ install:
 - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 
-script: "mvn cobertura:cobertura"
+script:
+
 
 after_success:
-- bash <(curl -s https://codecov.io/bash)
+-bash <(curl -s https://codecov.io/bash) -t repository-upload-token
 
 cache:
   directories:
