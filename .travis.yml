@@ -12,7 +12,7 @@ install:
 
 
 script:
--bash <(curl -s https://codecov.io/bash) -t repository-upload-token
+-bash <(curl -s https\://codecov.io/bash) -t repository-upload-token
 
 cache:
   directories:
