@@ -4,7 +4,7 @@ cache:
   directories:
 - $HOME/.m2
 install:
-- mvn -N io.takari:maven:wrapper
+- echo "install nothing!"
 script:
 - "./mvnw clean install -B -V"
 - bash <(curl -s https://codecov.io/bash) -t repository-upload-token
